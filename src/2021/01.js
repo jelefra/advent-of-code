@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 const { getInput, time } = require('../helpers.js');
 
-const input = getInput('./src/2021/01-input.txt');
+const input = getInput('./src/2021/01-input.txt').map(Number);
 
 const part1 = () => {
   let count = 0;

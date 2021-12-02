@@ -1,6 +1,6 @@
 const REPETITIONS = 1000;
 
-const getInput = (path) => require('fs').readFileSync(path, 'utf8').split('\n').map(Number);
+const getInput = (path) => require('fs').readFileSync(path, 'utf8').split('\n');
 
 const runRepeatedly = (func) => {
   for (let i = 0; i < REPETITIONS; i++) {
