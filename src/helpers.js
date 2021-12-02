@@ -14,10 +14,10 @@ const measureExecutionTime = (func) => {
   const startTime = getCurrentTime();
   runRepeatedly(func);
   const endTime = getCurrentTime();
-  return ((endTime - startTime) / REPETITIONS);
+  return (endTime - startTime) / REPETITIONS;
 };
 
-const formatDuration = ms => `${ms.toFixed(2)} ms`;
+const formatDuration = (ms) => `${ms.toFixed(2)} ms`;
 
 const time = (fn) => formatDuration(measureExecutionTime(fn));
 
