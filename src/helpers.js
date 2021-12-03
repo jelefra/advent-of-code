@@ -23,4 +23,6 @@ const formatDuration = (ms) => `${ms.toFixed(2)} ms`;
 
 const time = (fn) => formatDuration(measureExecutionTime(fn));
 
-module.exports = { getInput, time };
+const convertBinaryToDecimal = (binary) => parseInt(binary, 2);
+
+module.exports = { getInput, time, convertBinaryToDecimal };
