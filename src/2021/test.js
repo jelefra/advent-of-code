@@ -1,6 +1,6 @@
-const day1 = require('./01.js');
-const day2 = require('./02.js');
-const day3 = require('./03.js');
+const day1 = require('./01');
+const day2 = require('./02');
+const day3 = require('./03');
 
 describe('Advent of Code 2021', () => {
   describe('day 1', () => {

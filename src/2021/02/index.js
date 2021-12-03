@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-const { getInput, time } = require('../helpers.js');
+const { getInput, time } = require('../../helpers.js');
 
-const input = getInput('./src/2021/02-input.txt');
+const input = getInput('./src/2021/02/02-input.txt');
 
 const part1 = () => {
   const instructions = input.reduce(
