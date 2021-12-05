@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 const { getInput, time, convertBinaryToDecimal } = require('../../helpers.js');
 
-const input = getInput('./src/2021/03/03-input.txt');
+const input = getInput('./src/2021/03/input.txt');
 
 const part1 = () => {
   const rates = input
