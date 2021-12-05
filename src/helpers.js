@@ -19,7 +19,10 @@ const measureExecutionTime = (func, repetitions) => {
   return (endTime - startTime) / repetitions;
 };
 
-const formatDuration = (ms) => `${ms.toFixed(2)} ms`;
+const formatDuration = (ms) => {
+  const decimals = ms < 10 ? 2 : 0;
+  return `${ms.toFixed(decimals)} ms`;
+};
 
 const time = (fn, repetitions = REPETITIONS) =>
   formatDuration(measureExecutionTime(fn, repetitions));
