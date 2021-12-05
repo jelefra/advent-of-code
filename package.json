@@ -13,5 +13,20 @@
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.4.2",
     "prettier": "^2.5.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es2021": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+    "parserOptions": {
+      "ecmaVersion": 12
+    }
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
