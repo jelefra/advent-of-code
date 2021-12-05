@@ -9,7 +9,7 @@ const boards = input.slice(1);
 const findLineWinningDrawIndex = (line) =>
   Math.max(...line.map((number) => drawSet.indexOf(number)));
 
-const initialiseEmptyArrayOfArrays = (size) =>
+const initialiseArrayOfEmptyArrays = (size) =>
   Array(size)
     .fill(0)
     .map(() => []);
@@ -20,7 +20,7 @@ const getVerticalLines = (horizontalLines) =>
       verticalLines[index].push(value);
     });
     return verticalLines;
-  }, initialiseEmptyArrayOfArrays(horizontalLines[0].length));
+  }, initialiseArrayOfEmptyArrays(horizontalLines[0].length));
 
 const getHorizontalLines = (board) =>
   board
