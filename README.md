@@ -15,4 +15,4 @@ Committed solutions are solutions that were submitted to the contest, after refa
 
 In a first stage, I don't attempt to be clever and I try to focus on readability instead, keeping in mind extensibility when relevant.
 
-To start with, performance is measured (imperfectly) by measuring the average execution time. Code is ran on a 2019 MacBook Pro.
+To start with, performance is measured (imperfectly) by timing the average execution. Code is ran on a 2019 MacBook Pro.
