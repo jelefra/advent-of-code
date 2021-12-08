@@ -5,6 +5,7 @@ const day4 = require('./04');
 const day5 = require('./05');
 const day6 = require('./06');
 const day7 = require('./07');
+const day8 = require('./08');
 
 describe('Advent of Code 2021', () => {
   describe('day 1', () => {
@@ -88,6 +89,18 @@ describe('Advent of Code 2021', () => {
     it('passes part 2', () => {
       const answer = day7.part2();
       expect(answer).toEqual(98119739);
+    });
+  });
+
+  describe('day 8', () => {
+    it('passes part 1', () => {
+      const answer = day8.part1();
+      expect(answer).toEqual(390);
+    });
+
+    it('passes part 2', () => {
+      const answer = day8.part2();
+      expect(answer).toEqual(1011785);
     });
   });
 });
