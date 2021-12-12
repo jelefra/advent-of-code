@@ -20,8 +20,13 @@ const measureExecutionTime = (func, repetitions) => {
 };
 
 const formatDuration = (ms) => {
-  const decimals = ms < 10 ? 2 : 0;
-  return `${ms.toFixed(decimals)} ms`;
+  if (ms > 10000) {
+    return `${(ms / 1000).toFixed(2)} s`;
+  }
+  if (ms > 10) {
+    return `${ms.toFixed(0)} ms`;
+  }
+  return `${ms.toFixed(2)} ms`;
 };
 
 const time = (fn, repetitions = REPETITIONS) =>
