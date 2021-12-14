@@ -90,17 +90,4 @@ const part1 = () => {
 // console.log('Part 1: ', time(part1));
 // 2.0 ms
 
-const part2 = () => {
-  const map = formatInput(input);
-
-  let counter = 0;
-  do {
-    counter++;
-  } while (step(map) < 100);
-
-  return counter;
-};
-// console.log('Part 2: ', time(part2));
-// 6.59 ms
-
-module.exports = { part1, part2 };
+module.exports = { part1 };

@@ -13,29 +13,6 @@ const removeValidChunks = (line) => {
 
 const hasClosingCharacter = (result) => /[)\]}>]/.test(result);
 
-const findWrongClosingCharacter = (result) => result.match(/[)\]}>]/)[0];
-
-const points = {
-  ')': 3,
-  ']': 57,
-  '}': 1197,
-  '>': 25137,
-};
-
-const part1 = () =>
-  input
-    .reduce((acc, line) => {
-      const remainder = removeValidChunks(line);
-      if (hasClosingCharacter(remainder)) {
-        acc.push(findWrongClosingCharacter(remainder));
-      }
-      return acc;
-    }, [])
-    .map((char) => points[char])
-    .reduce((sum, points) => sum + points);
-// console.log('Part 1: ', time(part1));
-// 1.30 ms
-
 const opposites = {
   '(': ')',
   '[': ']',
@@ -79,4 +56,4 @@ const part2 = () => {
 // console.log('Part 2: ', time(part2));
 // 1.37 ms
 
-module.exports = { part1, part2 };
+module.exports = { part2 };

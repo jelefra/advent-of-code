@@ -15,19 +15,4 @@ const part1 = () => {
 // console.log('Part 1: ', time(part1));
 // 0.01 ms
 
-const part2 = () => {
-  let count = 0;
-  for (let i = 0; i < input.length; i++) {
-    const sum1 = input[i] + input[i + 1] + input[i + 2];
-    const sum2 = input[i + 1] + input[i + 2] + input[i + 3];
-    if (sum1 < sum2) {
-      count++;
-    }
-  }
-
-  return count;
-};
-// console.log('Part 2: ', time(part2));
-// 0.01 ms
-
-module.exports = { part1, part2 };
+module.exports = { part1 };

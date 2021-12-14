@@ -20,12 +20,8 @@ const findLowestFuelConsumption = (fuelConsumption = (value) => value) => {
 
 const arithmeticSum = (n) => (n * (n + 1)) / 2;
 
-const part1 = () => findLowestFuelConsumption();
-// console.log('Part 1: ', time(part1, 50));
-// 308 ms
-
 const part2 = () => findLowestFuelConsumption(arithmeticSum);
 // console.log('Part 2: ', time(part2, 50));
 // 317 ms
 
-module.exports = { part1, part2 };
+module.exports = { part2 };

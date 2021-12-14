@@ -50,18 +50,15 @@ const findBoardWinningDrawIndex = (board) => {
   return lineWinningDrawIndex;
 };
 
-// A winning board wins earliest
-// Assume one board will be solved given set of numbers to draw from
-const winning = (a, b) => a < b;
-const losing = (a, b) => !winning(a, b);
-
-const findBoard = (criteria, benchmark) => {
-  let winningDrawIndex = benchmark;
+const findBoard = () => {
+  // Assume one board will be solved given set of numbers to draw from
+  let winningDrawIndex = drawSet.length + 1;
   let winningBoard;
 
   for (let board of boards) {
     const thisWinningDrawIndex = findBoardWinningDrawIndex(board);
-    if (criteria(thisWinningDrawIndex, winningDrawIndex)) {
+    // A winning board wins earliest
+    if (thisWinningDrawIndex < winningDrawIndex) {
       winningDrawIndex = thisWinningDrawIndex;
       winningBoard = board;
     }
@@ -81,14 +78,8 @@ const findBoard = (criteria, benchmark) => {
   );
 };
 
-// A winning board will be solved before the last draw
-const part1 = () => findBoard(winning, drawSet.length + 1);
+const part1 = () => findBoard();
 // console.log('Part 1: ', time(part1));
 // 1.33 ms
 
-// A losing board will be solved after the first draw
-const part2 = () => findBoard(losing, 0);
-// console.log('Part 2: ', time(part2));
-// 1.33 ms
-
-module.exports = { part1, part2 };
+module.exports = { part1 };

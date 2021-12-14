@@ -17,30 +17,6 @@ const boxInput = (input) => {
 
 const MAP = boxInput(input);
 
-const part1 = () => {
-  const lowPoints = [];
-  for (let x = 1; x < MAP.length; x++) {
-    for (let y = 1; y < MAP[x].length; y++) {
-      // Assertions still valid without type conversion
-      const height = Number(MAP[x][y]);
-      if (
-        height < Number(MAP[x - 1][y]) &&
-        height < Number(MAP[x][y + 1]) &&
-        height < Number(MAP[x + 1][y]) &&
-        height < Number(MAP[x][y - 1])
-      ) {
-        lowPoints.push(height);
-      }
-    }
-  }
-
-  return lowPoints
-    .map((lowPoint) => lowPoint + 1)
-    .reduce((sum, lowPoint) => sum + lowPoint);
-};
-// console.log('Part 1: ', time(part1));
-// 4.95 ms
-
 const coordinatesDoNotExist = (x, y, map, basin, basins) =>
   !coordinatesInKnownBasins(x, y, map, basins) &&
   !coordinatesInBasin(x, y, map, basin);
@@ -113,4 +89,4 @@ const part2 = () => {
 // console.log('Part 2: ', time(part2, 5));
 // 227 ms
 
-module.exports = { part1, part2 };
+module.exports = { part2 };

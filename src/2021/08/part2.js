@@ -37,18 +37,6 @@ const input = getInput('./src/2021/08/input.txt');
 
 */
 
-const part1 = () => {
-  const uniqueLengths = [2, 3, 4, 7];
-
-  return input
-    .map((entry) => entry.split(' | ')[1])
-    .join(' ')
-    .split(' ')
-    .filter(({ length }) => uniqueLengths.includes(length)).length;
-};
-// console.log('Part 1: ', time(part1));
-// 0.15 ms
-
 const findNum = (pattern, digits) =>
   digits.indexOf(
     digits.find(
@@ -228,4 +216,4 @@ const part2 = () =>
 // console.log('Part 2: ', time(part2));
 // 1.86 ms
 
-module.exports = { part1, part2 };
+module.exports = { part2 };
