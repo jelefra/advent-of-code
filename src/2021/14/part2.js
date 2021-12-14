@@ -1,15 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 const { getInput, time } = require('../../helpers.js');
 
-const input = getInput('./src/2021/14/input.txt');
+const input = getInput('./src/2021/14/input.txt', '\n\n');
 
 const extractCouples = (polymer) =>
   Array.from(polymer.matchAll(/(?=(\w{2}))/g), (match) => match[1]);
 
 const part2 = (data = input) => {
-  const template = data.filter((line) => !line.includes('->'))[0];
+  const template = data[0];
   const rules = Object.fromEntries(
-    data.filter((line) => line.includes('->')).map((rule) => rule.split(' -> '))
+    data[1].split('\n').map((rule) => rule.split(' -> '))
   );
 
   const couplesInTemplates = extractCouples(template);

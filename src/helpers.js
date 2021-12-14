@@ -1,8 +1,7 @@
 const REPETITIONS = 1000;
 
-// filter because IDE sometimes adds trailing newline to input file
 const getInput = (path, split = '\n') =>
-  require('fs').readFileSync(path, 'utf8').split(split).filter(Boolean);
+  require('fs').readFileSync(path, 'utf8').split(split);
 
 const runRepeatedly = (func, repetitions) => {
   for (let i = 0; i < repetitions; i++) {

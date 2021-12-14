@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 const { getInput, time } = require('../../helpers.js');
 
-const input = getInput('./src/2021/13/input.txt');
+const input = getInput('./src/2021/13/input.txt', '\n\n');
 
 const merge = (gridA, gridB) => {
   const rowLength = gridB[0].length;
@@ -77,17 +77,11 @@ const getPaperSize = (dots) =>
     { x: 0, y: 0 }
   );
 
-const parseInstructions = (paper) =>
-  paper.filter((line) => line.includes('fold'));
-
-const parseDots = (paper) =>
-  paper
-    .filter((line) => !line.includes('fold'))
-    .map((xy) => xy.split(',').map((coordinate) => Number(coordinate)));
-
 const part2 = (paper = input) => {
-  const dots = parseDots(paper);
-  const instructions = parseInstructions(paper);
+  const dots = paper[0]
+    .split('\n')
+    .map((xy) => xy.split(',').map((coordinate) => Number(coordinate)));
+  const instructions = paper[1].split('\n');
   const { x, y } = getPaperSize(dots);
   let grid = representPaper(x, y);
 

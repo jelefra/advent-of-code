@@ -2,7 +2,7 @@ const { getInput } = require('../../helpers.js');
 const { part1 } = require('./part1');
 const { part2 } = require('./part2');
 
-const testInput1 = getInput('./src/2021/14/test-input-1.txt');
+const testInput1 = getInput('./src/2021/14/test-input-1.txt', '\n\n');
 
 describe('Advent of Code 2021', () => {
   describe('day 14', () => {
