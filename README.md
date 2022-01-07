@@ -27,11 +27,3 @@
 ### 2021
 
 - Day 15: [rukke's solution](https://old.reddit.com/r/adventofcode/comments/rgqzt5/2021_day_15_solutions/hom6gmm/)
-
-## Comments
-
-Committed solutions are solutions that were submitted to the contest, after refactoring. Refactoring is done after each part is completed and may involve replacing hard-coded values with functions, renaming variables, extracting helper functions, etc. It does not involve major logic changes.
-
-In a first stage, I don't attempt to be clever and I try to focus on readability instead, keeping in mind extensibility when relevant.
-
-To start with, performance is measured (imperfectly) by timing the average execution. Code is ran on a 2019 MacBook Pro.
