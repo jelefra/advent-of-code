@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const { getInput, time } = require('../../helpers.js');
+import { getInput, time } from '../../helpers.js';
 
 const input = getInput('./src/2021/12/input.txt');
 
@@ -68,4 +68,4 @@ const part2 = (connections = input) => countPaths(connections);
 // console.log('Part 2: ', time(part2, 3));
 // 21.47s
 
-module.exports = { part2 };
+export default part2;

@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const { getInput, time } = require('../../helpers.js');
+import { getInput, time } from '../../helpers.js';
 
 const input = getInput('./src/2021/06/input.txt');
 
@@ -25,4 +25,4 @@ const part1 = () => _ageByNDays(school, 80).length;
 // console.log('Part 1: ', time(part1, 100));
 // 80 ms
 
-module.exports = { part1 };
+export default part1;

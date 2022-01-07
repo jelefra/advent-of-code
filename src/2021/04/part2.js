@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const { getInput, time } = require('../../helpers.js');
+import { getInput, time } from '../../helpers.js';
 
 const input = getInput('./src/2021/04/input.txt', '\n\n');
 
@@ -86,4 +86,4 @@ const part2 = () => findBoard(losing, 0);
 // console.log('Part 2: ', time(part2));
 // 1.33 ms
 
-module.exports = { part2 };
+export default part2;

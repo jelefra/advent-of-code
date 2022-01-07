@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const { getInput, time, convertBinaryToDecimal } = require('../../helpers.js');
+import { getInput, time, convertBinaryToDecimal } from '../../helpers.js';
 
 const input = getInput('./src/2021/03/input.txt');
 
@@ -40,4 +40,4 @@ const part2 = () => {
 // console.log('Part 2: ', time(part2));
 // 0.76 ms
 
-module.exports = { part2 };
+export default part2;

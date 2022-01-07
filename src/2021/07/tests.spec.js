@@ -1,5 +1,5 @@
-const { part1 } = require('./part1');
-const { part2 } = require('./part2');
+import part1 from './part1';
+import part2 from './part2';
 
 describe('Advent of Code 2021', () => {
   describe('day 7', () => {

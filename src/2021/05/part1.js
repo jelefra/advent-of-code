@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const { getInput, time } = require('../../helpers.js');
+import { getInput, time } from '../../helpers.js';
 
 const input = getInput('./src/2021/05/input.txt');
 
@@ -61,4 +61,4 @@ const countOverlappingLines = () => {
 const part1 = () => countOverlappingLines();
 // console.log('Part 1: ', time(part1, 50));
 
-module.exports = { part1 };
+export default part1;

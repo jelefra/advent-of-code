@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const { getInput, time } = require('../../helpers.js');
+import { getInput, time } from '../../helpers.js';
 
 const input = getInput('./src/2021/08/input.txt');
 
@@ -216,4 +216,4 @@ const part2 = () =>
 // console.log('Part 2: ', time(part2));
 // 1.86 ms
 
-module.exports = { part2 };
+export default part2;

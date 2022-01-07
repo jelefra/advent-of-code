@@ -1,7 +1,7 @@
-const { getInput } = require('../../helpers.js');
-const { part1 } = require('./part1');
-const { part2 } = require('./part2');
-const part1Attempt1 = require('./part1Attempt1');
+import { getInput } from '../../helpers.js';
+import part1 from './part1';
+import part2 from './part2';
+import part1Attempt1 from './part1Attempt1';
 
 const testInput1 = getInput('./src/2021/15/test-input-1.txt');
 
@@ -9,7 +9,7 @@ describe('Advent of Code 2021', () => {
   describe('day 15', () => {
     describe('part1attempt1', () => {
       it('passes with testInput1', () => {
-        const answer = part1Attempt1.part1(testInput1);
+        const answer = part1Attempt1(testInput1);
         expect(answer).toEqual(40);
       });
 
