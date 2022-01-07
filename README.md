@@ -16,6 +16,17 @@
 [12](src/2021/12)
 [13](src/2021/13)
 [14](src/2021/14)
+[15](src/2021/15)
+
+## Theory
+
+- [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) (2021 - Day 15)
+
+## Inspiration
+
+### 2021
+
+- Day 15: [rukke's solution](https://old.reddit.com/r/adventofcode/comments/rgqzt5/2021_day_15_solutions/hom6gmm/)
 
 ## Comments
 
