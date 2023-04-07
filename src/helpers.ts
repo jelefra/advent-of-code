@@ -27,7 +27,7 @@ const formatDuration = (ms) => {
     return `${ms.toFixed(0)} ms`;
   }
   if (ms > 0.5) {
-    return `${ms.toFixed(2)} ms`;
+    return `${ms.toFixed(1)} ms`;
   }
   return `${ms.toFixed(3)} ms`;
 };
