@@ -29,7 +29,7 @@ const formatDuration = (ms) => {
   if (ms > 0.5) {
     return `${ms.toFixed(1)} ms`;
   }
-  return `${ms.toFixed(3)} ms`;
+  return `${ms.toFixed(2)} ms`;
 };
 
 const time = (fn, repetitions = REPETITIONS) =>
