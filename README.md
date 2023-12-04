@@ -31,6 +31,9 @@
 [7](src/2022/07)
 [8](src/2022/08)
 
+## 2023
+[1](src/2023/01)
+
 ## Theory
 
 - [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) (2021 - Day 15)
