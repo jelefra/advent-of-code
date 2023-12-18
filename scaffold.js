@@ -29,13 +29,13 @@ const tests = (year, day) =>
   '\n' +
   `describe(\'Advent of Code ${year}\', () => {\n` +
   `  describe(\'day ${parseInt(day)}\', () => {\n` +
-  "    describe('part 1', () => {\n" +
+  "    fdescribe('part 1', () => {\n" +
   "      it('passes with test input', () => {\n" +
   "        const answer = part1(['Test input']);\n" +
   '        expect(answer).toEqual(true);\n' +
   '      });\n' +
   '\n' +
-  "      it('passes with full input', () => {\n" +
+  "      xit('passes with full input', () => {\n" +
   '        const answer = part1();\n' +
   '        expect(answer).toEqual(true);\n' +
   '      });\n' +
@@ -47,7 +47,7 @@ const tests = (year, day) =>
   '        expect(answer).toEqual(true);\n' +
   '      });\n' +
   '\n' +
-  "      it('passes with full input', () => {\n" +
+  "      xit('passes with full input', () => {\n" +
   '        const answer = part2();\n' +
   '        expect(answer).toEqual(true);\n' +
   '      });\n' +
