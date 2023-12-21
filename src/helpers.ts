@@ -21,6 +21,9 @@ const measureExecutionTime = (func, repetitions) => {
 
 const formatDuration = (ms) => {
   if (ms > 10000) {
+    return `${(ms / 1000).toFixed(0)} s`;
+  }
+  if (ms > 100) {
     return `${(ms / 1000).toFixed(2)} s`;
   }
   if (ms > 10) {
